@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+         <link rel="stylesheet" href="sass/registerstyles.css"> 
+    <title>Register</title>
+</head>
+<body>
+<main>
+   <div class="container">
+    <form action="config1.php" method="post">
+        <h1>Sign Up</h1>
+        <div>
+            <label for="firstname">First Name    :</label>
+            <input type="text" name="firstname" id="firstname" required>
+        </div>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname"  required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"  required>
+        </div>
+        
+        
+        <div>
+            <label for="phone number"> Phone Number :</label>
+            <input type="text" name="phone" id="phone"  required>
+        </div>
+        
+         <div>
+            <label for="DOB">DOB:</label>
+            <input type="date" name="dob" id="dob"  required>
+        </div>
+        <div>
+            <label for="age"> AGE:</label>
+            <input type="number" name="age" id="age" min="1" max="100"  required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password"  required>
+        </div>
+         <div>
+            <label for="password2">Confirm Password:</label>
+            <input type="password" name="password2" id="password2"  required>
+        </div>
+         
+            <label for="agree">
+                <input type="checkbox" name="agree" id="agree" value="yes"/> I agree
+                     with the <a href="#" title="term of services">term of services</a>
+            </label>
+        
+        <button type="submit" id="register">Register</button>
+        <footer>Already a member? <a href="login.html">Login here</a></footer>
+    </form>
+</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="js/registerscript.js"></script>
+</body>
+</html>
